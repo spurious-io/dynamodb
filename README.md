@@ -1,4 +1,4 @@
-# Docker Memcached
+# Docker Local DynamoDB
 
  * Source: https://github.com/stevenjack/local-dynamo
  * Website: https://github.com/stevenjack/local-dynamo
