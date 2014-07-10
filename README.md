@@ -1,28 +1,28 @@
-# Docker Local DynamoDB
+# Docker Spurious DynamoDB
 
- * Source: https://github.com/stevenjack/local-dynamo
- * Website: https://github.com/stevenjack/local-dynamo
+ * Source: https://github.com/stevenjack/spurious-dynamo
+ * Website: https://github.com/stevenjack/spurious-dynamo
 
 This creates a [Docker](http://docker.io) container that runs [AWS local DynamoDB](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html).
 
 
 ## Installation
 
-Clone this repo and run: `docker build -t <yourname>/local-dynamo .`, this should build
-the required container for running local-dynamo within Docker.
+Clone this repo and run: `docker build -t <yourname>/spurious-dynamo .`, this should build
+the required container for running spurious-dynamo within Docker.
 
 
 ## Usage
 
 The easiest way to use this container is to use the public image from the docker index:
 
-`docker run -d -p 4570:4570 smaj/local-dynamo`
+`docker run -d -p 4570:4570 smaj/spurious-dynamo`
 
 This is will damonize the container than expose the endpoint to your local machine (Or VM if you're running on OSX).
 
 
 
-If you've built the image locally then you can run the resulting image fairly easily with: `docker run -t -i <yourname>/local-dynamo`
+If you've built the image locally then you can run the resulting image fairly easily with: `docker run -t -i <yourname>/spurious-dynamo`
 
 
 ## Contributing
