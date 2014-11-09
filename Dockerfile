@@ -1,9 +1,9 @@
-FROM stackbrew/ubuntu:saucy
+FROM java:7
 MAINTAINER Steven Jack <stevenmajack@gmail.com>
 
 RUN apt-get -y update
 
-RUN apt-get -y install openjdk-7-jdk curl
+RUN apt-get -y install curl
 RUN mkdir -p /var/data/local-dynamo/data
 RUN curl http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest -L -O
 RUN tar -zxvf dynamodb_local_latest -C /var/data/local-dynamo
